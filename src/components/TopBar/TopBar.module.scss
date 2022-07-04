@@ -1,0 +1,50 @@
+@import '../../sass/variables';
+@import '../../sass/mixins';
+
+.wrapper {
+  width: 100%;
+  border: 1px solid $grey;
+  .top-bar {
+    display: flex;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-size: 1.4rem;
+    .left,
+    .center,
+    .right {
+      display: flex;
+      flex: 1;
+    }
+    .center {
+      justify-content: center;
+    }
+    .left {
+      margin-right: auto;
+      justify-content: flex-start;
+      .social-media {
+        a {
+          padding: 0 1rem;
+          span {
+            padding-left: 0.5rem;
+          }
+        }
+      }
+    }
+    .right {
+      margin-left: auto;
+      justify-content: flex-end;
+    }
+
+    a:hover {
+      color: $grey-2;
+      transition: all 0.3s;
+    }
+
+    .text-decor {
+      text-decoration: underline;
+    }
+    @include tablet {
+      display: none;
+    }
+  }
+}

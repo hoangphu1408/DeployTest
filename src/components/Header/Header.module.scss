@@ -1,0 +1,24 @@
+@import '../../sass/variables';
+@import '../../sass/mixins';
+
+.header {
+  display: flex;
+  .menu-item,
+  .logo,
+  .tooltip-item {
+    display: flex;
+    flex: 1;
+  }
+
+  .menu-item {
+    justify-content: flex-start;
+  }
+
+  .logo {
+    justify-content: center;
+  }
+
+  .tooltip-item {
+    justify-content: flex-end;
+  }
+}
